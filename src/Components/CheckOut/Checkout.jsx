@@ -88,12 +88,9 @@ export default function Checkout() {
         </div>
         <div className="cartItems-promo-code">
           <p>If you have a promo code, Enter it here</p>
-          <div className="promo-cloth" onClick={() => handlePromo()}>
-            Store Discounts 30%
-          </div>
           <div className="cartItems-promobox">
             <input type="text" placeholder={promo ? promo : "promo code"} />
-            <button>Submit</button>
+            <button onClick={() => handlePromo()}>Store Discounts 30%</button>
           </div>
         </div>
       </div>

@@ -2,7 +2,6 @@ import { useState, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
 import Relate from "../Relate/Relate";
-import InputComponent from "../Input/InputComponent";
 import { CreateStars } from "../Rating/Rating";
 
 export default function DetailProduct() {
@@ -27,7 +26,6 @@ export default function DetailProduct() {
 
   return (
     <>
-      <InputComponent />
       <div className="path-product">
         <h5>
           <Link to="/" className="nav-link">

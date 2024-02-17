@@ -12,7 +12,10 @@ import Search from "./Components/Search/Search";
 import Checkout from "./Components/CheckOut/Checkout";
 import VirtualAcount from "./Components/VirtualAcount/VirtualAcount";
 import PageNotFound from "./Components/404/PageNotFound";
-
+import About from "./Pages/About";
+import Allproduct from "./Pages/Allproduct";
+import NewCollection from "./Pages/NewCollection"
+import BestSeller from "./Pages/BestSeller";
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -33,8 +36,24 @@ const Router = createBrowserRouter([
         ],
       },
       {
+        path: "/about",
+        Component: About,
+      },
+      {
         path: "/men",
         Component: Men,
+      },
+      {
+        path: "/allproduct",
+        Component: Allproduct,
+      },
+      {
+        path: "/newcollection",
+        Component: NewCollection,
+      },
+      {
+        path: "/bestseller",
+        Component: BestSeller,
       },
       {
         path: "",
@@ -84,6 +103,48 @@ const Router = createBrowserRouter([
         children: [
           {
             path: "/search/detail/:id",
+            Component: Relate,
+          },
+        ],
+      },
+      {
+        path: "/allproduct",
+        Component: Allproduct,
+      },
+      {
+        path: "",
+        Component: DetailProduct,
+        children: [
+          {
+            path: "/allproduct/detail/:id",
+            Component: Relate,
+          },
+        ],
+      },
+      {
+        path: "/newcollection",
+        Component: NewCollection,
+      },
+      {
+        path: "",
+        Component: DetailProduct,
+        children: [
+          {
+            path: "/newcollection/detail/:id",
+            Component: Relate,
+          },
+        ],
+      },
+      {
+        path: "/bestseller",
+        Component: BestSeller,
+      },
+      {
+        path: "",
+        Component: DetailProduct,
+        children: [
+          {
+            path: "/bestseller/detail/:id",
             Component: Relate,
           },
         ],

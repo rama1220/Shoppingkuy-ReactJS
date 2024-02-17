@@ -6,6 +6,8 @@ import p5_img from "./product_15.png";
 import p6_img from "./product_6.png";
 import p7_img from "./product_17.png";
 import p8_img from "./product_28.png";
+import p9_img from "./product_29.png";
+import p10_img from "./product_27.png";
 
 let new_collections = [
    {
@@ -88,6 +90,26 @@ let new_collections = [
    rating: 4.3,
    description: "Chic hooded sweatshirt featuring a stylish colorblocked design. Keep your child warm and fashionable with this versatile piece."
  },
+  {
+    id: 29,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p9_img,
+    new_price: 85.0,
+    old_price: 120.5,
+    rating: 4.3,
+    description: "Chic hooded sweatshirt featuring a stylish colorblocked design. Keep your child warm and fashionable with this versatile piece."
+  },
+   {
+     id: 30,
+     name: "Boys Orange Colourblocked Hooded Sweatshirt",
+     category: "kid",
+     image: p10_img,
+     new_price: 85.0,
+     old_price: 120.5,
+     rating: 4.3,
+     description: "Chic hooded sweatshirt featuring a stylish colorblocked design. Keep your child warm and fashionable with this versatile piece."
+   },
 ];
 
 export default new_collections;
